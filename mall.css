@@ -1,0 +1,42 @@
+#footer {
+  padding: 15px;
+  color: #f4f6fd;
+  font-size: 14px;
+  position: ;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  
+  background: #040b14;
+}
+
+#footer .copyright {
+  text-align: center;
+}
+
+#footer .credits {
+  padding-top: 5px;
+  text-align: center;
+  font-size: 13px;
+  color: #eaebf0;
+}
+.image-preview{
+    width: 300px;
+    min-height: 100px;
+    border: 2px solid #dddddd;
+    margin-top: 15px;
+    /* deflaut text*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #cccccc
+
+  }
+  .image-preview-image{
+    display:none;
+    width: 100%;
+  }
+  #inpfile{
+    display: none;
+  }

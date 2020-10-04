@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="mallfull.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/font-awesome.min.css"><link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" type="text/css" href="mall.css">
+   <style type="text/css">
+		
+		.card{
+			max-height: 400px;
+			min-height: 300px;
+		}
+		img{
+			max-height: 200px;
+			max-width: 450px
+		}
+		a{
+			text-decoration-line: none;
+		}
+		.profile-img{
+			width:63px;
+			height: 63px;
+			border-radius: 5px;
+		}
+		.fa{
+			width: 15px;
+		}
+		.carousel-item{
+			min-height: 200px
+		}
+		input{
+			max-width: 700px;
+		}
+
+	</style>
+	<title></title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-success sticky-top">
+	<a class="navbar-brand text-white">THE MALL UGANDA</a>	
+	<div>
+	
+	<a href="" class="mx-2 cart-log" id="cart"><img src="img/cart-icon.png"><span class="badge btn-warning cart-number">2</span></a>
+	<button class="navbar-toggle rounded" type="button" data-toggle="collapse" data-target="#malluganda" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	</div>
+	<div class="collapse navbar-collapse" id="malluganda">
+		<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+			<li>
+				<a href="eduuka.html"><button class="badge border btn-info " type="button">visit seller view of shop</button></a>
+				<a href="search.html"><button class="badge border btn-info " type="button">visit search</button></a>
+			</li>
+			<li class="my-2">
+				<button class="badge border btn-warning " type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-user mx-1"></i>LOGIN</button>
+
+			</li>
+			<li>
+				<form action="search-1.php" method="POST">
+			     <div class="input-group justify-content-center">
+				<div class="input-group-prepend ">
+					<button type="submit" class="input-group-text prepend search-product" name="search1Submit"><i class="fa fa-search"></i></button>
+				</div>
+				<input type="text" class="form-control control value-search-products" placeholder="search for product" name="search1">
+			</div>
+		</form>
+			</li>
+		    <a href="logout.php"><button class="badge border btn-outline-danger" id="cart">logout</button></a>
+		</ul>
+	</div>	
+	</nav>
+	<div class="container">
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="      exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-content-send">
+                
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="      exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-content-varified">
+                
+            </div>
+        </div>
+    </div>
+	</div>
+	<section>
+		<div class="head">
+	<div class="container py-2 ">
+		<nav class="nav justify-content-center bg-light nav-pills ">
+			<a class="nav-link badge border mx-1" href="#profile" data-toggle="tab">PROFILE</a>
+			<a class="nav-link  active badge border mx-1" href="#shop" data-toggle="tab">SHOP</a>
+		</nav>
+		<div class="container text-primary">
+		<div class="section-header text-center py-1">
+		     <h4 class="display-4 text-primary">SHOP NAME</h4>
+		     <h4 class="lead">SHOP PROFILE SLOGAN OR MOTTO</h4>
+		     <hr>
+	 </div>
+	</div>
+	<div class="tab-content">
+	<div class="tab-pane" id="profile">
+		 <h1 class="text-secondary text-center">About</h1>
+	    	     <hr>
+		 <div class="row shadow-lg  mb-2 text-muted">
+            <div class="col-sd-12 col-md-6">
+	    		 <p> <strong>Founded on: </strong> 1 May 1995</p>
+                  <p> <strong>Location: </strong>Masindi</p>
+                  <p> <strong> Town: </strong>Masindi town</p>
+                  <p><strong>Phone: </strong>25678456720</p>
+	    	</div>
+	    	<div class="col-sd-12 col-md-6">
+	    		  <p> <strong>watsup no: </strong>0773663616</p>
+                  <p> <strong> Email: </strong> alijuna@maan.com</p>
+                  <p> <strong>Owned/run by: </strong>Alijuna</p>
+	    	</div></div>
+	    	<h1 class="text-secondary text-center">Product catergories offered</h1>
+	        <hr>
+	        <div class="row shadow-lg  mb-2 text-muted">
+	        	<div class="col-sd-12 col-md-6">
+	        	<p>laptops</p>
+	        	<p>phones</p>
+	        	<p>heaters</p>
+	        	<p>tvs</p>
+	        	</div>
+	        </div>
+	        <h1 class="text-secondary text-center">Comments</h1>
+	        <hr>
+	        <div class="comment-container">
+	   	<div class="media">
+	    	<img src="images/man-3.jpg" class="mx-2  profile-img">
+	    	<div class="media-body">
+	    		<h5 class="mt-0">luky</h5>
+	    		<div class="shadow-lg p-2 mb-2 bg-success text-white rounded">
+	    			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	    			
+	    		</div>
+	    	</div>
+	    </div>
+	    <div class="media">
+	    	<div class="media-body">
+	    		<p class="mt-0  text-primary font-italic">reply</p>
+	    		<div class="shadow-lg p-2 mb-2 bg-primary text-white rounded">
+	    			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	    			
+	    		</div>
+	    	</div>
+	    </div>
+	    <div class="media">
+	    	<img src="images/man-3.jpg" class="mx-2  profile-img">
+	    	<div class="media-body">
+	    		<h5 class="mt-0">Ali</h5>
+	    		<div class="shadow-lg p-2 mb-2 bg-success text-white rounded">
+	    			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	    			
+	    		</div>
+	    	</div>
+	    </div>
+	    <div class="media">
+	    	<div class="media-body">
+	    		<p class="mt-0 font-italic text-primary">reply</p>
+	    		<div class="shadow-lg p-2 mb-2 bg-primary text-white rounded">
+	    			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	    			
+	    		</div>
+	    	</div>
+	    </div>
+	   </div>
+	   <div>
+        	<input type="submit" name="create_shop" class="btn btn-outline-info my-2 " value="LOAD MORE COMMENTS" id="load_more_comments">
+        	<div id="more"></div>
+        </div>
+	</div>
+	<div class="tab-pane fade show active " id="shop">
+		<div class="container my-2">
+					<form action="gallery.php" method="POST">
+							<div class="input-group justify-content-center">
+								<div class="input-group-prepend ">
+									<button class="input-group-text prepend" name="advert_search"><i class="fa fa-search"></i></button>
+								</div>
+								<input type="text" name="search_advertiser" class="form-control control" placeholder="search shop name">
+							</div>
+						</form>
+                </div>
+		<nav class="nav justify-content-center nav-pills my-2">
+			<a class="nav-link  active badge border mx-1" href="#" data-toggle="tab">ALL</a>
+			<a class="nav-link badge border mx-1" href="#" data-toggle="tab">LAPTOPS</a>
+			<a class="nav-link  badge border mx-1" href="#" data-toggle="tab">PHONES</a>
+			<a class="nav-link  badge border mx-1" href="#" data-toggle="tab">HEATERS</a>
+			<a class="nav-link  badge border mx-1" href="#" data-toggle="tab">TVs</a>
+		</nav>
+		<div>
+			<div class="row">
+				<div class="col-lg-3 col-sm-6">
+                    <div class="product-item">
+                        <div class="pi-pic">
+                            <img src="images/man-3.jpg" alt="">
+                            <div class="sale">012</div>
+                           
+                            <ul>
+                                <li class="quick-view"><a href="">shop name</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="pi-text">
+                            
+                                <h5>product name</h5>
+                            
+                            <div class="product-price">
+                                price
+                                <span>original price</span>
+                            </div>
+                            <div class="btnn">
+                                <button class="badge border btn-primary buy" >BUY</button>
+                                <button class="ask badge border mx-1 btn-success"    ><i class="fa fa-envelope ask" style="width: 20px;"></i>ASK</button>
+                                <button  tabindex="0" class="badge border btn-success" role="button" data-toggle="popover" data-trigger="focus" title="Description" data-content="product description "><i class="fa fa-info" style="width: 20px;"></i>INFO</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                    <div class="product-item">
+                        <div class="pi-pic">
+                            <img src="images/man-3.jpg" alt="">
+                            <div class="sale">012</div>
+                           
+                            <ul>
+                                <li class="quick-view"><a href="">shop name</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="pi-text">
+                            
+                                <h5>product name</h5>
+                            
+                            <div class="product-price">
+                                price
+                                <span>original price</span>
+                            </div>
+                            <div class="btnn">
+                                <button class="badge border btn-primary buy" >BUY</button>
+                                <button class="ask badge border mx-1 btn-success"    ><i class="fa fa-envelope ask" style="width: 20px;"></i>ASK</button>
+                                <button  tabindex="0" class="badge border btn-success" role="button" data-toggle="popover" data-trigger="focus" title="Description" data-content="product description "><i class="fa fa-info" style="width: 20px;"></i>INFO</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                    <div class="product-item">
+                        <div class="pi-pic">
+                            <img src="images/man-3.jpg" alt="">
+                            <div class="sale">012</div>
+                           
+                            <ul>
+                                <li class="quick-view"><a href="">shop name</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="pi-text">
+                            
+                                <h5>product name</h5>
+                            
+                            <div class="product-price">
+                                price
+                                <span>original price</span>
+                            </div>
+                            <div class="btnn">
+                                <button class="badge border btn-primary buy" >BUY</button>
+                                <button class="ask badge border mx-1 btn-success"    ><i class="fa fa-envelope ask" style="width: 20px;"></i>ASK</button>
+                                <button  tabindex="0" class="badge border btn-success" role="button" data-toggle="popover" data-trigger="focus" title="Description" data-content="product description "><i class="fa fa-info" style="width: 20px;"></i>INFO</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                    <div class="product-item">
+                        <div class="pi-pic">
+                            <img src="images/man-3.jpg" alt="">
+                            <div class="sale">012</div>
+                           
+                            <ul>
+                                <li class="quick-view"><a href="">shop name</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="pi-text">
+                            
+                                <h5>product name</h5>
+                            
+                            <div class="product-price">
+                                price
+                                <span>original price</span>
+                            </div>
+                            <div class="btnn">
+                                <button class="badge border btn-primary buy" >BUY</button>
+                                <button class="ask badge border mx-1 btn-success"    ><i class="fa fa-envelope ask" style="width: 20px;"></i>ASK</button>
+                                <button  tabindex="0" class="badge border btn-success" role="button" data-toggle="popover" data-trigger="focus" title="Description" data-content="product description "><i class="fa fa-info" style="width: 20px;"></i>INFO</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                    <div class="product-item">
+                        <div class="pi-pic">
+                            <img src="images/man-3.jpg" alt="">
+                            <div class="sale">012</div>
+                           
+                            <ul>
+                                <li class="quick-view"><a href="">shop name</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="pi-text">
+                            
+                                <h5>product name</h5>
+                            
+                            <div class="product-price">
+                                price
+                                <span>original price</span>
+                            </div>
+                            <div class="btnn">
+                                <button class="badge border btn-primary buy" >BUY</button>
+                                <button class="ask badge border mx-1 btn-success"    ><i class="fa fa-envelope ask" style="width: 20px;"></i>ASK</button>
+                                <button  tabindex="0" class="badge border btn-success" role="button" data-toggle="popover" data-trigger="focus" title="Description" data-content="product description "><i class="fa fa-info" style="width: 20px;"></i>INFO</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                    <div class="product-item">
+                        <div class="pi-pic">
+                            <img src="images/man-3.jpg" alt="">
+                            <div class="sale">012</div>
+                           
+                            <ul>
+                                <li class="quick-view"><a href="">shop name</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="pi-text">
+                            
+                                <h5>product name</h5>
+                            
+                            <div class="product-price">
+                                price
+                                <span>original price</span>
+                            </div>
+                            <div class="btnn">
+                                <button class="badge border btn-primary buy" >BUY</button>
+                                <button class="ask badge border mx-1 btn-success"    ><i class="fa fa-envelope ask" style="width: 20px;"></i>ASK</button>
+                                <button  tabindex="0" class="badge border btn-success" role="button" data-toggle="popover" data-trigger="focus" title="Description" data-content="product description "><i class="fa fa-info" style="width: 20px;"></i>INFO</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                    <div class="product-item">
+                        <div class="pi-pic">
+                            <img src="images/man-3.jpg" alt="">
+                            <div class="sale">012</div>
+                           
+                            <ul>
+                                <li class="quick-view"><a href="">shop name</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="pi-text">
+                            
+                                <h5>product name</h5>
+                            
+                            <div class="product-price">
+                                price
+                                <span>original price</span>
+                            </div>
+                            <div class="btnn">
+                                <button class="badge border btn-primary buy" >BUY</button>
+                                <button class="ask badge border mx-1 btn-success"    ><i class="fa fa-envelope ask" style="width: 20px;"></i>ASK</button>
+                                <button  tabindex="0" class="badge border btn-success" role="button" data-toggle="popover" data-trigger="focus" title="Description" data-content="product description "><i class="fa fa-info" style="width: 20px;"></i>INFO</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</section>
+	<footer id="footer">
+		<div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>the mall</span></strong>
+      </div>
+      <div class="credits">
+        Designed by <a href="#">the mall</a>
+      </div>
+    </div>
+	</footer>
+</body>
+<script src="bootstrap/jquery-3.5.1.min.js"></script>
+<script src="bootstrap/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('[data-toggle="popover"]').popover()
+    })
+ </script>
+ <script type="text/javascript">
+ 	$(document).ready(function(){
+ 		$(document).on('click','.ask',function(){
+                make_dialog();
+               $('#exampleModal').modal('show');
+        });
+ 	})
+ 	function make_dialog(){
+              model_content='<div>';
+              model_content+='<div class="modal-header"><p><h5 class="modal-title text-success" id="exampleModalLabel">sending message to sellers name</h5></p></div>';
+              model_content+='<div class="modal-body"><h6 class="text-success">About the product_name</h6><div class="form-group"><textarea class="form-control" rows="3" name="chat_message" id="chat_message"></textarea></div></div>';
+              model_content+='<div class="modal-footer"><button type="button" class="badge border mx-1 btn-success send-message" id="">send</button><button type="button" class="badge border mx-1 btn-danger"data-dismiss="modal">cancel</button></div>'
+              model_content+='</div>';
+              $('.modal-content-send').html(model_content);
+              }
+ </script>
+</html>
